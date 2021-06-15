@@ -1,3 +1,6 @@
+#![warn(missing_docs)]
+#![allow(clippy::type_complexity)]
+
 pub mod archetype;
 pub mod bundle;
 pub mod change_detection;
