@@ -1,3 +1,5 @@
+//! Worlds store [components](crate::component), [entities](crate::entity) and resources and provide methods to manipulate them.
+
 mod entity_ref;
 mod pointer;
 mod spawn_batch;

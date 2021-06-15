@@ -1,3 +1,5 @@
+//! Events are broadcast notifications, usually between [systems](`crate::system`) of a single [world](`crate::world`).
+
 use crate as bevy_ecs;
 use crate::{
     component::Component,

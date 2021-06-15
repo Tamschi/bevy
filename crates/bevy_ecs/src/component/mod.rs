@@ -28,7 +28,11 @@ impl<T: Send + Sync + 'static> Component for T {}
 
 #[derive(Debug, Copy, Clone, Eq, PartialEq)]
 pub enum StorageType {
+    /// The default, which enables very fast query iteration.
     Table,
+    /// Storage more suited for components that are very often added to or removed from entities, at cost of query iteration speed.
+    ///
+    /// Note that the difference here also depends on the amount of other data associated with affected entities.
     SparseSet,
 }
 

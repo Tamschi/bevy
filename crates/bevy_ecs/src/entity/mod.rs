@@ -1,3 +1,7 @@
+//! Entities are logical sets of type-distinct [components](`crate::component`) within a single [world](`crate::world`).
+//!
+//! Each entity has an [archetype](crate::archetype), which changes whenever [components](`crate::component`) are added or removed.
+
 mod map_entities;
 mod serde;
 

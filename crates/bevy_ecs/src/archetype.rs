@@ -1,3 +1,8 @@
+//! Archetypes are distinct sets of [component](`crate::component`) types that appear(ed) on [entities](`crate::entity`).
+//! They are largely an implementation detail of Bevy ECS and usually not used directly by games.
+//! 
+//! For more information, see <https://bevyengine.org/news/bevy-0-5/#ecs-core-rewrite> and [Bevy PR #1525: Bevy ECS V2](https://github.com/bevyengine/bevy/pull/1525).
+
 use crate::{
     bundle::BundleId,
     component::{ComponentId, StorageType},
